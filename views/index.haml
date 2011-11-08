@@ -4,3 +4,17 @@
   .counter
     = @days_till[:burn]
     days
+
+.countdown
+  .sub
+    The gate opens in
+  .counter
+    = @days_till[:gate]
+    days
+
+.countdown
+  .sub
+    Tickets go on sale in
+  .counter
+    = @days_till[:tickets]
+    days
