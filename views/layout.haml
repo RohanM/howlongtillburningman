@@ -27,5 +27,10 @@
       js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=19207701008";
       fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
+
     = yield
-    .fb-like{'data-href' => "http://www.howlongtillburningman.com/", 'data-send' => "true", 'data-layout' => "button_count", 'data-width' => "450", 'data-show-faces' => "false", 'data-colorscheme' => "dark"}
+    
+    .fb-like{'data-href' => "http://www.howlongtillburningman.com/", 'data-send' => "true", 'data-layout' => "button_count", 'data-width' => "175", 'data-show-faces' => "false", 'data-colorscheme' => "dark"}
+    .twitter-tweet
+      %a.twitter-share-button{'href' => "https://twitter.com/share", 'data-count' => "horizontal", 'data-via' => "RohanM"} Tweet
+      %script{:type => "text/javascript", :src => "//platform.twitter.com/widgets.js"}
