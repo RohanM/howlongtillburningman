@@ -1,20 +1,6 @@
-.countdown
-  .sub
-    The man burns in
-  .counter
-    = @days_till[:burn]
-    days
-
-.countdown
-  .sub
-    The gate opens in
-  .counter
-    = @days_till[:gate]
-    days
-
-.countdown
-  .sub
-    The ticket lottery opens in
-  .counter
-    = @days_till[:tickets]
-    days
+- @dates.each do |date|
+  .countdown
+    .sub
+      = date[:message]
+    .counter
+      = pluralize(date[:days_till], 'day')
