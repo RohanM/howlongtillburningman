@@ -11,7 +11,7 @@ TICKET_DATES = [{:message => "The pre-sale ticket round closes in", :date => Dat
                 {:message => "The main sale ticket round opens in", :date => Date.new(2012, 1, 9)},
                 {:message => "The main sale ticket round closes in", :date => Date.new(2012, 1, 22)},
                 {:message => "The main-sale ticket lottery is drawn in", :date => Date.new(2012, 2, 1)},
-                {:message => "The secondary ticket sale round opens in", :date => Date.new(2012, 3, 1)}]
+                {:message => "The Secure Ticket Exchange Program launches in", :date => Date.new(2012, 2, 29)}]
 
 get '/' do
   @dates = EVENT_DATES.map { |date| {:message => date[:message], :days_till => (date[:date] - Date.today).to_i } }
