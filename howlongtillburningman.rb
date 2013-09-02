@@ -16,6 +16,7 @@ TICKET_DATES = []
 
 get '/' do
   @dates = EVENT_DATES.map { |date| {:message => date[:message], :days_till => (date[:date] - Date.today).to_i } }
+  @temple_burnt = EVENT_DATES.all? { |date| date[:date] < Date.today-2 }
 
   TICKET_DATES.each do |date|
     if date[:date] > Date.today
