@@ -3,8 +3,8 @@ require 'date'
 require 'action_view'
 include ActionView::Helpers::TextHelper
 
-EVENT_DATES = [{:message => "The man burns in", :date => Date.new(2013, 8, 31)},
-               {:message => "The gate opens in", :date => Date.new(2013, 8, 26)}]
+EVENT_DATES = [{:message => "The man burns in", :date => Date.new(2014, 8, 30)},
+               {:message => "The gate opens in", :date => Date.new(2014, 8, 25)}]
 
 TICKET_DATES = []
 # TICKET_DATES = [{:message => "The pre-sale ticket round closes in", :date => Date.new(2011, 12, 11)},
